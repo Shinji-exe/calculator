@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/customs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <script defer src="./scripts/script.js"></script>
+    <title>Home</title>
+</head>
+<body>
+
+    <header id="navbarChange" class="container-fluid py-3 position-fixed z-3 px-3 changeOpacity navigation">
+        <nav  class="d-flex justify-content-between align-items-center">
+            <a href="index.html">
+                <img src="./images/logoipsum-321.svg" class="" alt="">
+            </a>
+            <ul id="desktopNav" class="nav nav-underline">
+                <li class="nav-item"> 
+                    <a class="nav-link active " href="#">Mortgage</a>
+                </li>
+                <li>
+                    <a class="nav-link " href="#">Future Value</a>
+                </li>
+                <li>
+                    <a class="nav-link" disabled>TBD</a>
+                </li>
+<li>
+    <a href="#" class="close">
+        <i class="bi bi-x-circle"></i>
+    </a>
+</li>
+            </ul>
+            <!-- <a class="nav-link btn btn-primary" href="#">Contact Us</a> -->
+           
+            <i id="listButton" class="bi bi-list h2" onclick=""></i>
+        </nav>
+
+
+       
+    </header>
+
+    <main class="">
+
+<section id="section1" class="">
+
+<img src="./images/4k-mountain-l3f04sogeaabr5h0.jpg" class="w-100 back1" alt="">
+
+<div class="intoSection text-center text-light back1">
+    <h1 class="">Think about your future</h1>
+    <p>At Futurecorp. We take care of your needs and keep you at peace</p>
+    <button class="btn btn-primary">
+        <a href="#temp" class="text-light text-decoration-none">Mortgage</a>
+    </button>
+</div>
+
+<div>
+    <form action="">
+        <input type="text">
+        <input type="password">
+    </form>
+</div>
+
+</section>
+
+<section id="temp" class="d-flex my-4 border w-100 container justify-content-between">
+
+<div class="">
+
+<div class="d-flex flex-column">
+    <h1>Mortgage Loan Calculator</h1>
+    <input type="number" class="my-2" name="" id="payRateInput" placeholder="Savings" value="0">
+    <input type="number" class="my-2" name="" id="interestRateInput" placeholder="Interest Rate" value="0" required>
+    <input type="number" class="my-2" name="" id="monthInput" placeholder="Month" value="0">
+    <!-- <input type="button" onclick="mortgage()" name="Calculate" id="calculate" placeholder="Calculate" > -->
+    <button  onclick="mortgage()" name="Calculate" id="calculate" class="btn btn-primary">Calculate</button>
+</div>
+    
+    <div class="d-flex justify-content-evenly my-2">
+        <label for="">Monthly</label>
+        <input type="radio" class="form-check-input" name="flexRadioDefault" onclick="mortgage()">
+        <label for="">Yearly</label>
+        <input type="radio" class="form-check-input" name="flexRadioDefault" onclick="mortgageYearly()" >
+        <label for="">Daily</label>
+        <input type="radio" class="form-check-input" name="flexRadioDefault" onclick="mortgageDaily()" >
+    </div>
+
+</div> 
+
+<div id="mortgageAmount" readonly>
+
+</div>
+
+<!-- <input readonly type="text" id="mortgageAmount" /> -->
+</section>
+
+<section id="temp2" class="h-100">
+
+</section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
